@@ -1,0 +1,57 @@
+body{
+    height: 100vh;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    flex:0.5;
+    background-color: #8b5cf6;
+    color: white;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    gap: 10px;
+    align-items: center;
+    margin:8px 20px 8px 20px;
+}
+
+.nav ul,.others ul{
+    padding:0px 20px 0px 20px;
+}
+
+.others{
+    margin-top: 50px;
+}
+li.nav{
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    gap: 5px;
+    align-items: center;
+    margin:16px 10px 16px 10px;
+}
+
+.mainpage{
+    flex:5;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.profile-icon{
+    height: 5vh;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    content:url("./images/profile-image.jpg");
+}
