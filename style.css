@@ -92,13 +92,17 @@ li.nav{
     padding-left: 40px;
 }
 
-.searchcontainer,.welcome{
-    padding-left: 40px;
+.searchcontainer,.welcome,.cards-Trend{
     display: flex;
     justify-content: left;
     align-items: center;
     gap: 20px;
 }
+
+.searchcontainer,.welcome{
+    padding-left: 40px;
+}
+
 .searchcontainer input{
     width: 500px;
     border-radius: 16px;
@@ -152,11 +156,12 @@ li.nav{
     grid-template-rows: minmax(40px, 60px) 1fr;
 }
 
-.maincontenttitle,.annoucetitle{
+.maincontenttitle,.annoucetitle,.trendTitle{
     margin: 0px;
     justify-self: left;
     align-self: center;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .maincontenttitle{
@@ -206,25 +211,21 @@ li.nav{
     padding-right: 30px;
 }
 .announcements{
-    flex:1;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
 .annoucetitle{
     padding-bottom: 20px;
+    align-self: flex-start;
 }
-
-.trending{
-    flex: 1;
-}
-
-.announcementcont{
+.announcementcont,.trendingcont{
     background-color: white;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     padding: 8px;
+    margin-bottom: 20px;
 }
 
 .cards-Announce{
@@ -238,7 +239,7 @@ hr.solid {
     border-radius: 50%;
 }
 
-.cards-Announce p:nth-child(odd){
+.cards-Announce p:nth-child(odd),.trendingcont p:nth-child(odd){
     font-weight: bold;
     font-size: 16px;
     margin: 0px;
@@ -247,6 +248,20 @@ hr.solid {
 .cards-Announce p:nth-child(even){
     font-size: 12px;
     margin: 0px;
+}
+
+.trendTitle{
+    text-align: left;
+    margin: 0px 0px 20px 0px;
+}
+
+.cards-Trend{
+    padding: 8px;
+}
+
+.cards-Trend p{
+    margin: 0px;
+    padding: 6px;
 }
 
 ul {
