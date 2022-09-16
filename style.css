@@ -95,16 +95,16 @@ li.nav{
 .searchcontainer,.welcome{
     padding-left: 40px;
     display: flex;
-   justify-content: left;
-   align-items: center;
-   gap: 20px;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
 }
 .searchcontainer input{
     width: 500px;
     border-radius: 16px;
     border-style: none;
     height: 30px;
-    background-color: lightgray;
+    background-color: #ddd6fe;
 }
 
 .welcome p:first-child{
@@ -132,6 +132,69 @@ li.nav{
     color: white;
     border-style: none;
     padding: 2vh;
+    font-weight: bold;
+}
+.header{
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+              0 2px 2px rgba(0,0,0,0.15), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.15);
+}
+.content{
+    display:grid;
+    grid-template-columns: 4fr minmax(200px,300px);
+    background-color: #ddd6fe;
+}
+
+.maincontent{
+    display: grid;
+    grid-template-rows: minmax(40px, 60px) 1fr;
+}
+
+.maincontenttitle{
+    margin: 0px;
+    justify-self: left;
+    align-self: center;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.cardcontent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:40px;
+    margin:0px 40px 20px 40px;
+}
+
+.cards{
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+    display: grid;
+    grid-template-rows: minmax(30px,0.5fr) 3fr minmax(30px,0.5fr);
+    gap: 2px;
+    border-radius: 8px;
+    border-left: solid;
+    border-color: #8b5cf6;
+    border-width: 8px;
+    padding: 16px;
+}
+.title{
+    font-weight: bold;
+}
+.passage{
+    justify-self: start;
+    margin:0px;
+    line-height: 1.6;
+}
+.options{
+    margin-right: 8px;
+    display: flex;
+    gap:8px;
+    justify-content: right;
 }
 
 ul {
