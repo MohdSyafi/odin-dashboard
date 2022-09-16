@@ -152,12 +152,15 @@ li.nav{
     grid-template-rows: minmax(40px, 60px) 1fr;
 }
 
-.maincontenttitle{
+.maincontenttitle,.annoucetitle{
     margin: 0px;
     justify-self: left;
     align-self: center;
-    margin-left: 40px;
     font-weight: bold;
+}
+
+.maincontenttitle{
+    margin-left: 40px;
 }
 
 .cardcontent{
@@ -169,6 +172,7 @@ li.nav{
 
 .cards{
     background-color: white;
+    height: 300px;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.15), 
@@ -195,6 +199,54 @@ li.nav{
     display: flex;
     gap:8px;
     justify-content: right;
+}
+.sidecontent{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+}
+.announcements{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.annoucetitle{
+    padding-bottom: 20px;
+}
+
+.trending{
+    flex: 1;
+}
+
+.announcementcont{
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.cards-Announce{
+    flex: 1;
+    padding: 16px;
+}
+
+hr.solid {
+    border-top: 1px solid #8b5cf6;
+    margin: 0px;
+    border-radius: 50%;
+}
+
+.cards-Announce p:nth-child(odd){
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+}
+
+.cards-Announce p:nth-child(even){
+    font-size: 12px;
+    margin: 0px;
 }
 
 ul {
