@@ -1,16 +1,47 @@
+@font-face {
+    font-family: roboto-light;
+    src: url(./fonts/Roboto/Roboto-Light.ttf);
+  }
+
+@font-face {
+font-family: roboto-bold;
+src: url(./fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: roboto-bolditalic;
+    src: url(./fonts/Roboto/Roboto-MediumItalic.ttf);
+    }
+
+@font-face {
+    font-family: roboto-superbold;
+    src: url(./fonts/Roboto/Roboto-Bold.ttf);
+    }
+
+@font-face {
+    font-family: roboto-thin;
+    src: url(./fonts/Roboto/Roboto-Thin.ttf);
+    }
+
+* {
+    font-family: roboto-light;
+}
+
 body{
     height: 100vh;
+    width: 100vw;
     margin: 0px;
 }
 
 .container{
     display: flex;
     flex-direction: row;
+    background-color: #8b5cf6;
 }
 
 .sidebar{
+    margin-top: 2vh;
     flex:0.5;
-    background-color: #8b5cf6;
     color: white;
 }
 
@@ -39,8 +70,40 @@ li.nav{
     margin:16px 10px 16px 10px;
 }
 
-.mainpage{
+.mainpage{  
     flex:5;
+    background-color: #ede9fe;
+}
+
+.upperbar{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: right;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.searchcontainer{
+    padding-left: 40px;
+    display: flex;
+   justify-content: left;
+   align-items: center;
+   gap: 20px;
+}
+.searchcontainer input{
+    width: 500px;
+    border-radius: 16px;
+    border-style: none;
+    height: 30px;
+    background-color: lightgray;
 }
 
 ul {
